@@ -14,10 +14,14 @@ export const { styled, getCssText, keyframes, createTheme, css, theme } = create
   theme: {
     colors: {
       lightBackground: "#F2F4F7",
-      background: "#F2F4F7",
-      block: "#FFFFFF",
+      background: "#FFF",
+      secondaryBack: "#D9D9D9",
+      stroke: "#615447",
+      block: "#2E2D2C",
+      secondaryBlock: "#55647D",
+      third: "#1AA9F8",
       white: "#FFFFFF",
-      text: "#141E33",
+      text: "#000",
     },
     shadows: {},
     fonts: {
