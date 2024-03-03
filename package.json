@@ -1,5 +1,5 @@
 {
-  "name": "kyotox",
+  "name": "e-commerce",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,7 +13,8 @@
     "next": "13.3.0",
     "normalize.css": "^8.0.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "use-media": "^1.5.0"
   },
   "devDependencies": {
     "@types/node": "18.15.11",

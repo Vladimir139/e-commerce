@@ -13,15 +13,12 @@ export const media = {
 export const { styled, getCssText, keyframes, createTheme, css, theme } = createStitches({
   theme: {
     colors: {
-      lightBackground: "#F2F4F7",
-      background: "#FFF",
-      secondaryBack: "#D9D9D9",
-      stroke: "#615447",
-      block: "#2E2D2C",
-      secondaryBlock: "#55647D",
-      third: "#1AA9F8",
-      white: "#FFFFFF",
-      text: "#000",
+      background: "rgb(36, 36, 36)",
+      titles: "rgb(201, 201, 201)",
+      text: "#FFFFFF",
+      grayLight: "rgb(130, 130, 130)",
+      third: "rgb(46, 46, 46)",
+      accent: "rgb(34, 139, 230)"
     },
     shadows: {},
     fonts: {
@@ -66,6 +63,20 @@ export const { styled, getCssText, keyframes, createTheme, css, theme } = create
   },
   media,
 });
+
+const darkTheme = createTheme({
+  colors: {
+    background: "rgb(255, 255, 255)",
+    titles: "rgb(0, 0, 0)",
+    text: "#FFFFFF",
+    grayLight: "rgb(134, 142, 150)",
+    third: "rgb(255, 255, 255)",
+    accent: "rgb(34, 139, 230)"
+  },
+  space: {},
+  fonts: {},
+});
+
 
 export const setupGlobalStyles = () => {
   setupFonts();
