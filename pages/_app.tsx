@@ -1,10 +1,11 @@
 import "normalize.css";
 
 import type { AppProps } from "next/app";
-import { FC } from "react";
+import React, { FC } from "react";
 
 import { App } from "@/app";
 
+// @ts-ignore
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => (
   <App>
     <Component {...pageProps} />

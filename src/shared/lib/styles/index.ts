@@ -18,7 +18,11 @@ export const { styled, getCssText, keyframes, createTheme, css, theme } = create
       text: "#FFFFFF",
       grayLight: "rgb(130, 130, 130)",
       third: "rgb(46, 46, 46)",
-      accent: "rgb(34, 139, 230)"
+      accent: "rgb(34, 139, 230)",
+      accept: "rgb(18, 184, 134)",
+      turquoise: "rgb(21, 170, 191)",
+      main: "#FFFFFF",
+      secondary: "#000000",
     },
     shadows: {},
     fonts: {
@@ -55,28 +59,39 @@ export const { styled, getCssText, keyframes, createTheme, css, theme } = create
       small: "0.02em",
     },
     transitions: {
+      fast: "0.1s ease-in-out",
       default: "0.2s ease-in-out",
       long: "0.3s ease-in-out",
     },
     radii: {},
-    zIndices: {},
+    zIndices: {
+      overlay: 15,
+      sidebar: 20,
+      burger: 10,
+      carouselArrows: 5,
+      decorLine: 5,
+      decorActiveCircle: 6,
+    },
   },
   media,
 });
 
-const darkTheme = createTheme({
+export const lightTheme = createTheme({
   colors: {
     background: "rgb(255, 255, 255)",
     titles: "rgb(0, 0, 0)",
     text: "#FFFFFF",
     grayLight: "rgb(134, 142, 150)",
     third: "rgb(255, 255, 255)",
-    accent: "rgb(34, 139, 230)"
+    accent: "rgb(34, 139, 230)",
+    accept: "rgb(18, 184, 134)",
+    turquoise: "rgb(21, 170, 191)",
+    main: "#000000",
+    secondary: "#FFFFFF",
   },
   space: {},
   fonts: {},
 });
-
 
 export const setupGlobalStyles = () => {
   setupFonts();

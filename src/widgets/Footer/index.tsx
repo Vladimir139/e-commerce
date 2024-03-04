@@ -1,11 +1,13 @@
-import { media } from "../../shared/lib/styles";
 import React, { FC } from "react";
-import useMedia from "use-media";
-import { FooterDesktop, FooterMobile } from "./media";
 
-export const Footer:FC = () => {
-  const isMobile = useMedia(media.toWideTablet, false);
+import { IconGitHub } from "@/shared/lib/icons";
 
-  return <div>{isMobile ? <FooterMobile /> : <FooterDesktop />}</div>;
-};
+import * as S from "./styles";
 
+export const Footer: FC = () => (
+  <S.Footer>
+    <S.LinkGitHub href="https://github.com/Vladimir139">
+      <IconGitHub />
+    </S.LinkGitHub>
+  </S.Footer>
+);
