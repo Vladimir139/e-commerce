@@ -24,6 +24,8 @@ export const Label = styled("label", {
 });
 
 export const Input = styled("input", {
+  width: "100%",
+
   fontSize: "$smallLarge",
   fontWeight: "$regular",
 
@@ -37,15 +39,10 @@ export const Input = styled("input", {
     lineHeight: "34px",
     fontWeight: "$medium",
 
-    color: "$titles",
+    color: "$gray",
   },
 
   variants: {
-    stretch: {
-      true: {
-        width: "100%",
-      },
-    },
     size: {
       small: {},
       medium: {},

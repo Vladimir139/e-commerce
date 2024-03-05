@@ -98,3 +98,7 @@ export const FilterItem = styled("li", {
     },
   },
 });
+
+export const WrapperSlider = styled("div", {
+  marginTop: 10,
+});

@@ -1,13 +1,13 @@
 import React, { FC } from "react";
 
-export const IconCart: FC = () => (
+export const IconCart: FC<{ isWhite?: boolean }> = ({ isWhite }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="20"
     height="20"
     viewBox="0 0 24 24"
     fill="none"
-    stroke="#228be6"
+    stroke={isWhite ? "#FFFFFF" : "#228be6"}
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"

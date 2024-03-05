@@ -9,7 +9,6 @@ export const Input: FC<InputProps> = ({
   size,
   radius,
   type,
-  stretch,
   value,
   defaultValue,
   onChange,
@@ -24,7 +23,6 @@ export const Input: FC<InputProps> = ({
     </S.Text>
     <S.Label radius={radius}>
       <S.Input
-        stretch={stretch}
         theme={theme}
         size={size}
         value={value}

@@ -5,10 +5,11 @@ export interface ButtonProps {
   type?: "submit" | "button";
   radius?: "none" | "normal" | "medium";
   size?: "small" | "normal" | "medium" | "big";
-  theme?: "green" | "blue" | "inherit" | "turquoise" | "light";
+  theme?: "green" | "blue" | "inherit" | "turquoise" | "light" | "grey";
   stretch?: boolean;
   onClick?: () => void;
   isUppercase?: boolean;
   textSize?: "default" | "small" | "medium";
   disabled?: boolean;
+  isBorderNone?: boolean;
 }

@@ -22,7 +22,7 @@ export const Card: FC<CardProps> = ({ type, product }) => {
           <S.Description>{`${product.description.slice(0, 248)}...`}</S.Description>
           <S.BottomWrapper size={type}>
             <S.Price>{product.price}$</S.Price>
-            <S.LinkLearnMore href={`/products/${product.id}`}>Learn More Now!</S.LinkLearnMore>
+            <S.LinkLearnMore href={`/product/${product.id}`}>Learn More Now!</S.LinkLearnMore>
           </S.BottomWrapper>
         </S.InnerWrapper>
       </S.Card>
@@ -43,11 +43,11 @@ export const Card: FC<CardProps> = ({ type, product }) => {
         <S.Description margin={type}>{`${product.description.slice(0, 118)}...`}</S.Description>
         <S.Price>{product.price}$</S.Price>
         <S.BottomWrapper size={type}>
-          <S.LinkMore href={`/products/${product.id}`}>
+          <S.LinkMore href={`/product/${product.id}`}>
             <IconMore />
           </S.LinkMore>
           <Button theme="blue" radius="medium">
-            <IconCart /> Add to cart
+            <IconCart isWhite /> Add to cart
           </Button>
         </S.BottomWrapper>
       </S.InnerWrapper>

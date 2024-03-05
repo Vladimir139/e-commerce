@@ -41,7 +41,7 @@ export const Sidebar: FC<SidebarProps> = ({ isOpened, handleClose }) => {
             </S.NavLink>
           </S.Navigation>
           <S.WrapperLoginBtn>
-            <LoginButton />
+            <S.SignInBtn href="/login">Sign in</S.SignInBtn>
           </S.WrapperLoginBtn>
           <S.WrapperSwitchThemeBtn>
             <SwitchTheme />

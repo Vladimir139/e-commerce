@@ -141,6 +141,22 @@ export const WrapperLoginBtn = styled("div", {
   padding: 10,
 });
 
+export const SignInBtn = styled(Link, {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+
+  fontSize: "$smallLarge",
+  fontWeight: "$regular",
+  lineHeight: "16px",
+
+  backgroundColor: "$accent",
+
+  borderRadius: 5,
+
+  padding: "10px 18px",
+});
+
 export const WrapperSwitchThemeBtn = styled("div", {
   display: "flex",
   alignItems: "center",

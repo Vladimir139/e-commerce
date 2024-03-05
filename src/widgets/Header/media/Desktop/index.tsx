@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import { LoginButton, SwitchTheme } from "@/features";
+import { SwitchTheme } from "@/features";
 import { IconCart } from "@/shared/lib/icons";
 
 import * as S from "./styles";
@@ -16,7 +16,7 @@ export const HeaderDesktop: FC = () => (
       </S.NavItem>
     </S.Nav>
     <S.UserActions>
-      <LoginButton />
+      <S.UserAction href="/login">Sign in</S.UserAction>
       <SwitchTheme />
     </S.UserActions>
   </S.Header>

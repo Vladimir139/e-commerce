@@ -1,10 +1,9 @@
-import type { NextPage } from "next";
+import React, { FC } from "react";
 
-import { Container, Gap } from "@/shared/ui/atoms";
-import { Card } from "@/shared/ui/molecules";
-import { FilterSidebar } from "@/widgets/FilterSidebar";
+import { Button, Container, Gap } from "@/shared/ui/atoms";
+import { ShoppingCartCard } from "@/shared/ui/molecules";
 
-import * as S from "../src/views/Products/styles";
+import * as S from "./styles";
 
 const dataProduct = [
   {
@@ -94,19 +93,23 @@ const dataProduct = [
   },
 ];
 
-const Products: NextPage = () => (
-  <Container isBig>
+export const CartPage: FC = () => (
+  <Container>
     <Gap />
-    <S.BlocksWrapper>
-      <FilterSidebar />
+    <S.Titles>Shopping Cart</S.Titles>
+    <S.Wrapper>
       <S.ListProducts>
-        {dataProduct.map((product) => (
-          <Card product={product} type="store" />
-        ))}
+        <ShoppingCartCard product={dataProduct[0]} />
+        <S.Hr />
+        <ShoppingCartCard product={dataProduct[2]} />
       </S.ListProducts>
-    </S.BlocksWrapper>
+      <S.InnerWrapperInfo>
+        <S.TitleTotal>Total: $123</S.TitleTotal>
+        <Button theme="green" size="big" radius="normal" textSize="medium">
+          Checkout
+        </Button>
+      </S.InnerWrapperInfo>
+    </S.Wrapper>
     <Gap />
   </Container>
 );
-
-export default Products;

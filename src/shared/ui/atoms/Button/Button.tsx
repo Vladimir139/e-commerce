@@ -14,6 +14,7 @@ export const Button: FC<ButtonProps> = ({
   onClick,
   disabled,
   isUppercase,
+  isBorderNone,
   ...props
 }) => (
   <S.Button
@@ -27,6 +28,7 @@ export const Button: FC<ButtonProps> = ({
     onClick={onClick}
     disabled={disabled}
     isUppercase={isUppercase}
+    isBorderNone={isBorderNone}
   >
     {children}
   </S.Button>

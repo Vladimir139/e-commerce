@@ -41,6 +41,20 @@ export const UserActions = styled("div", {
   display: "flex",
   alignItems: "center",
 
-  gap: 30,
+  gap: 15,
 });
-export const UserAction = styled(Link, {});
+export const UserAction = styled(Link, {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+
+  fontSize: "$smallLarge",
+  fontWeight: "$regular",
+  lineHeight: "16px",
+
+  backgroundColor: "$accent",
+
+  borderRadius: 5,
+
+  padding: "10px 18px",
+});

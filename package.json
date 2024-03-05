@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-slider": "^1.1.2",
     "@stitches/react": "^1.2.8",
     "next": "13.3.0",
     "normalize.css": "^8.0.1",

@@ -15,6 +15,8 @@ export const Button = styled("button", {
   alignItems: "center",
   justifyContent: "center",
 
+  gap: 5,
+
   transition: "$default",
 
   "&:disabled": {
@@ -59,13 +61,13 @@ export const Button = styled("button", {
         padding: 11,
       },
       normal: {
-        padding: 14,
+        padding: "6px 14px",
       },
       medium: {
-        padding: 18,
+        padding: "10px 18px",
       },
       big: {
-        padding: 26,
+        padding: "12px 26px",
       },
     },
 
@@ -90,6 +92,10 @@ export const Button = styled("button", {
         backgroundColor: "#FFFFFF",
         color: "#000000",
       },
+      grey: {
+        backgroundColor: "$third",
+        color: "$gray",
+      },
     },
 
     stretch: {
@@ -105,7 +111,15 @@ export const Button = styled("button", {
     },
 
     disabled: {
-      true: {},
+      true: {
+        cursor: "not-allowed",
+      },
+    },
+
+    isBorderNone: {
+      true: {
+        border: "none",
+      },
     },
   },
 });
